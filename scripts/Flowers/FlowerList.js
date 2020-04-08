@@ -7,28 +7,15 @@ const contentTarget = document.querySelector(".flower")
 
 export const FlowerList = () => {
     //const chores = useChores()
-    const Flowerx = useFlowerHtml()//may change varb
+    const flowers = useFlowers()//may change varb
     //const peopleChores = useFamilyChores()
 
-    const render = () => {
-        contentTarget.innerHTML = flowers.map(flower => {
-            // Find related chore ids
-            //let relatedChores = peopleChores.filter(pc => pc.familyMemberId === person.id)
-
-            // Convert the array from relationship objects to chore objects
-            //relatedChores = relatedChores.map(rc => {
-              //  return chores.find(chore => chore.id === rc.choreId)
-            //}
-            )
-
-            // Get HTML representation of product
-            const html = FamilyMember(flower)
-
-            return html
-        }//.join("")
+    const render = flowersToRender => {
+        contentTarget.innerHTML = flowersToRender.map(flowerObject => {
+            return Flower(flowerObject)
+            }).join("")
     }
-
-    render()
+    render(flowers)
 }
 
 export default FlowerList

@@ -1,8 +1,8 @@
-const Flower = (flower) => {
+const Flower = (flowerObject) => {
     return `
         <section class="flowerclass">
             <header>
-                <h2>${flower.name}</h2>
+                <h2>${flowerObject.name}</h2>
             </header>
         </section>
     `
