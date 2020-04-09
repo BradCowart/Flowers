@@ -5,5 +5,13 @@
         { "id": 3, "name": "Carnation", "color":"Pink" },
         { "id": 4, "name": "Tulip", "color":"Purple" },
         { "id": 5, "name": "Peony", "color":"Yellow" }
+    ],
+
+    "retailers": [
+        {"id":1, "name":"Shop One", "Address":"First Address", "City":"Nashville", "State":"Tn"},
+        {"id":2, "name":"Shop Two", "Address":"Second Address", "City":"Hermitage", "State":"Tn"},
+        {"id":3, "name":"Shop Three", "Address":"Third Address", "City":"Brentwood", "State":"Tn"},
+        {"id":4, "name":"Shop Four", "Address":"Fourth Address", "City":"Franklin", "State":"Tn"},
+        {"id":5, "name":"Shop Five", "Address":"Fifth Address", "City":"Donelson", "State":"Tn"}
     ]
 }
